@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CalendarCellView: View {
+  
   private var day: Int
   private var clicked: Bool
   private var isToday: Bool

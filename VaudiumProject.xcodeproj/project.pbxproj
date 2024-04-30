@@ -19,7 +19,9 @@
 		8965B5FE2BD20C2400983FF9 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B5FD2BD20C2400983FF9 /* NavigationBar.swift */; };
 		8965B6002BD233DC00983FF9 /* EventBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B5FF2BD233DC00983FF9 /* EventBarView.swift */; };
 		8965B6022BD2545A00983FF9 /* EventBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B6012BD2545A00983FF9 /* EventBar.swift */; };
-		8965B6042BD2596600983FF9 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B6032BD2596600983FF9 /* EventModel.swift */; };
+		8965B6042BD2596600983FF9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B6032BD2596600983FF9 /* Event.swift */; };
+		89D7020A2BDCF2CF00E7D65A /* NewEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D702092BDCF2CF00E7D65A /* NewEventButton.swift */; };
+		89D7020C2BE08C1700E7D65A /* NewEventModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D7020B2BE08C1700E7D65A /* NewEventModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +38,9 @@
 		8965B5FD2BD20C2400983FF9 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		8965B5FF2BD233DC00983FF9 /* EventBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBarView.swift; sourceTree = "<group>"; };
 		8965B6012BD2545A00983FF9 /* EventBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBar.swift; sourceTree = "<group>"; };
-		8965B6032BD2596600983FF9 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		8965B6032BD2596600983FF9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		89D702092BDCF2CF00E7D65A /* NewEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventButton.swift; sourceTree = "<group>"; };
+		89D7020B2BE08C1700E7D65A /* NewEventModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +106,11 @@
 				8965B5E22BD1204000983FF9 /* CalendarView.swift */,
 				8965B5FB2BD20C1D00983FF9 /* ContentView.swift */,
 				8965B5EE2BD1208F00983FF9 /* CalendarCellView.swift */,
+				89D702092BDCF2CF00E7D65A /* NewEventButton.swift */,
 				8965B5F42BD13A5D00983FF9 /* Prac.swift */,
 				8965B5FD2BD20C2400983FF9 /* NavigationBar.swift */,
 				8965B5FF2BD233DC00983FF9 /* EventBarView.swift */,
+				89D7020B2BE08C1700E7D65A /* NewEventModalView.swift */,
 				8965B6012BD2545A00983FF9 /* EventBar.swift */,
 			);
 			path = View;
@@ -113,7 +119,7 @@
 		8965B5F62BD13FEA00983FF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8965B6032BD2596600983FF9 /* EventModel.swift */,
+				8965B6032BD2596600983FF9 /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,11 +197,13 @@
 				8965B5E32BD1204000983FF9 /* CalendarView.swift in Sources */,
 				8965B5F52BD13A5D00983FF9 /* Prac.swift in Sources */,
 				8965B5FC2BD20C1D00983FF9 /* ContentView.swift in Sources */,
+				89D7020C2BE08C1700E7D65A /* NewEventModalView.swift in Sources */,
 				8965B5FE2BD20C2400983FF9 /* NavigationBar.swift in Sources */,
 				8965B5E12BD1204000983FF9 /* VaudiumProjectApp.swift in Sources */,
 				8965B5F82BD1FF2700983FF9 /* Date+.swift in Sources */,
 				8965B6022BD2545A00983FF9 /* EventBar.swift in Sources */,
-				8965B6042BD2596600983FF9 /* EventModel.swift in Sources */,
+				89D7020A2BDCF2CF00E7D65A /* NewEventButton.swift in Sources */,
+				8965B6042BD2596600983FF9 /* Event.swift in Sources */,
 				8965B5F22BD121CB00983FF9 /* CalendarView+.swift in Sources */,
 				8965B6002BD233DC00983FF9 /* EventBarView.swift in Sources */,
 				8965B5EF2BD1208F00983FF9 /* CalendarCellView.swift in Sources */,

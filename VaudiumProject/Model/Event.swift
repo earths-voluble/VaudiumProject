@@ -6,14 +6,15 @@
 //
 
 import Foundation
+import SwiftData
 
-struct EventModel {
+struct Event {
   let id: UUID
   var title: String
   var startDate: Date
   var endDate: Date
 //  var location: String?
-  var description: String?
+  var eventDescription: String?
   var attendees: [String]?
   
   init(id: UUID, 
@@ -21,14 +22,14 @@ struct EventModel {
        startDate: Date,
        endDate: Date,
 //       location: String? = nil,
-       description: String? = nil,
+       eventDescription: String? = nil,
        attendees: [String]? = nil) {
     self.id = id
     self.title = title
     self.startDate = startDate
     self.endDate = endDate
 //    self.location = location
-    self.description = description
+    self.eventDescription = eventDescription
     self.attendees = attendees
   }
 }

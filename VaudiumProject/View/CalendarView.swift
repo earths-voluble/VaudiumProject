@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct CalendarView: View {
+//  @Query var Events: [Event]
+  @State var CalendarViewHeight: CGFloat = 0
+  @State var CalendarViewWidth: CGFloat = 0
+  
   @State var month: Date = Date()
   @State var clickedCurrentMonthDates: Date?
   
   init(
+    // 월은 Date, 초기값으로 현재 월
     month: Date = Date(),
     clickedCurrentMonthDates: Date? = nil
   ) {
@@ -25,27 +31,31 @@ struct CalendarView: View {
         ZStack {
           VStack {
             headerView
+              .frame(height: 50)
             calendarGridView
             Spacer()
           }
-          
-          EventBarView(width: geo.size.width, height: geo.size.height - 100)
-        }
-        .navigationTitle("몇월")
-        .toolbarBackground(Color.black, for: .navigationBar)
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-          ToolbarItem(placement: .automatic) {
-            Button("hello") {}
-            Button("ho") {}
+          VStack {
+            Spacer()
+            HStack {
+              Spacer()
+              NewEventButton()
+            }
           }
         }
+        .onAppear {
+          self.CalendarViewHeight = geo.size.height - 50
+          self.CalendarViewWidth = geo.size.width
+        }
+        .navigationTitle("")
+        .toolbarBackground(Color.black, for: .navigationBar)
+        .navigationBarTitleDisplayMode(.inline)
+        
       }
     }
-    
   }
   
-#warning("요일 뷰 배경 색 추가하기")
+
   // MARK: - 헤더 뷰
   private var headerView: some View {
     VStack {
@@ -118,7 +128,8 @@ struct CalendarView: View {
             let isToday = date.formattedCalendarDayDate == today.formattedCalendarDayDate
             
             CalendarCellView(day: day, clicked: clicked, isToday: isToday)
-
+              .frame(width: CalendarViewWidth / 7, height: CalendarViewHeight / 5)
+            
           } else if let prevMonthDate = Calendar.current.date(
             byAdding: .day,
             value: index + lastDayOfMonthBefore,
@@ -127,6 +138,7 @@ struct CalendarView: View {
             let day = Calendar.current.component(.day, from: prevMonthDate)
             
             CalendarCellView(day: day, isCurrentMonthDay: false)
+              .frame(width: CalendarViewWidth / 7, height: CalendarViewHeight / 5)
           }
         }
         .onTapGesture {

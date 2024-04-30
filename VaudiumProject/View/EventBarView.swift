@@ -29,7 +29,6 @@ struct EventBarView: View {
             
             GridItemView(object: self.objects[rowIndex * self.columns + columnIndex])
               .frame(width: self.width / CGFloat(self.columns), height: self.height / CGFloat(self.rows))
-              
           }
         }
       }
@@ -39,7 +38,6 @@ struct EventBarView: View {
 
 struct GridItemView: View {
   @State private var isModalPresented = false
-
   let object: String
   
   var body: some View {
@@ -53,21 +51,15 @@ struct GridItemView: View {
       .onTapGesture {
         self.isModalPresented = true
       }
-//      .sheet(isPresented: $isModalPresented) {
-//          // 모달 내용
-//          ModalView()
-//          .frame(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.7)
-//      }
+      .sheet(isPresented: $isModalPresented) {
+          // 모달 내용
+          NewEventModalView()
+          .frame(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.7)
+      }
   }
 
 }
 
-//struct ModalView: View {
-//    var body: some View {
-//        Text("This is a modal view")
-//            .padding()
-//    }
-//}
 extension EventBarView {
   func findEventBar() {
     

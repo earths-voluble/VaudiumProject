@@ -11,7 +11,7 @@ import SwiftUI
 struct VaudiumProjectApp: App {
   var body: some Scene {
     WindowGroup {
-      CalendarView()
+      ContentView()
     }
   }
 }
