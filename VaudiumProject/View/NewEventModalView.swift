@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct NewEventModalView: View {
-  var body: some View {
-    Text("This is a modal view")
-      .padding()
-  }
+    var body: some View {
+        Text("This is a modal view")
+            .padding()
+    }
 }

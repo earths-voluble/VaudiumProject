@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct EventBar: View {
-  var superViewWidth: CGFloat
-  var superViewHeight: CGFloat
-  
-  var body: some View {
-    let width = superViewWidth
-    let height = superViewHeight
+    var superViewWidth: CGFloat
+    var superViewHeight: CGFloat
     
-    RoundedRectangle(cornerRadius: 3)
-      .fill(Color.blue)
-      .frame(width: width, height: height)
-  }
+    var body: some View {
+        let width = superViewWidth
+        let height = superViewHeight
+        
+        RoundedRectangle(cornerRadius: 3)
+            .fill(Color.blue)
+            .frame(width: width, height: height)
+    }
 }
