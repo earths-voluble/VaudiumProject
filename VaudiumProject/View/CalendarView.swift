@@ -50,6 +50,7 @@ struct CalendarView: View {
                 .navigationTitle("")
                 .toolbarBackground(Color.black, for: .navigationBar)
                 .navigationBarTitleDisplayMode(.inline)
+                .navigationBarColor(backgroundColor: .systemIndigo, titleColor: .white)
                 
             }
         }

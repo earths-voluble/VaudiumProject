@@ -19,7 +19,7 @@ struct NewEventButton: View {
                     Text("New Event")
                 }
                 .padding()
-                .background(Color.blue)
+                .background(Color.indigo)
                 .foregroundColor(.white)
                 .cornerRadius(25)
             }

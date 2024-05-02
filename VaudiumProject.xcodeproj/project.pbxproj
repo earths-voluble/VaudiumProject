@@ -22,6 +22,7 @@
 		8965B6042BD2596600983FF9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965B6032BD2596600983FF9 /* Event.swift */; };
 		89D7020A2BDCF2CF00E7D65A /* NewEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D702092BDCF2CF00E7D65A /* NewEventButton.swift */; };
 		89D7020C2BE08C1700E7D65A /* NewEventModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D7020B2BE08C1700E7D65A /* NewEventModalView.swift */; };
+		89D702112BE3DD4100E7D65A /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D702102BE3DD4100E7D65A /* View+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		8965B6032BD2596600983FF9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		89D702092BDCF2CF00E7D65A /* NewEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventButton.swift; sourceTree = "<group>"; };
 		89D7020B2BE08C1700E7D65A /* NewEventModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventModalView.swift; sourceTree = "<group>"; };
+		89D702102BE3DD4100E7D65A /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				8965B5F12BD121CB00983FF9 /* CalendarView+.swift */,
 				8965B5F72BD1FF2700983FF9 /* Date+.swift */,
+				89D702102BE3DD4100E7D65A /* View+.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				8965B5F52BD13A5D00983FF9 /* Prac.swift in Sources */,
 				8965B5FC2BD20C1D00983FF9 /* ContentView.swift in Sources */,
 				89D7020C2BE08C1700E7D65A /* NewEventModalView.swift in Sources */,
+				89D702112BE3DD4100E7D65A /* View+.swift in Sources */,
 				8965B5FE2BD20C2400983FF9 /* NavigationBar.swift in Sources */,
 				8965B5E12BD1204000983FF9 /* VaudiumProjectApp.swift in Sources */,
 				8965B5F82BD1FF2700983FF9 /* Date+.swift in Sources */,
